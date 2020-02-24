@@ -18,7 +18,7 @@
   }
   &__h2 {
     color: #000000;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: $font-h;
     margin: 0px;
     font-size: 24px;
     line-height: 30px;
@@ -26,7 +26,7 @@
   }
   &__p {
     color: #4a4a4a;
-    font-family: "Roboto Regular", sans-serif;
+    font-family: $font-regular;
     font-size: 18px;
     line-height: 30px;
     margin: 0px 0px 30px 0px;
@@ -37,6 +37,9 @@
     border-radius: 22.5px;
     border: 2px solid #f26002;
     margin: 0px 0px 45px 0px;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   &__bottom-go {
     color: #f26002;
@@ -65,7 +68,7 @@
   }
   &__h2-reason {
     color: black;
-    font-family: "Roboto Slab ", sans-serif;
+    font-family: $font-h;
     font-size: 24px;
     line-height: 30px;
     margin: 30px 0px 45px 0px;
@@ -81,7 +84,7 @@
   }
   &__li-h3 {
     color: black;
-    font-family: "Roboto Slab ", sans-serif;
+    font-family: $font-h;
     font-size: 18px;
     line-height: 30px;
     margin: 0px 68px 0px 68px;
@@ -89,7 +92,7 @@
   }
   &__li-p {
     color: black;
-    font-family: "Roboto Regular", sans-serif;
+    font-family: $font-regular;
     font-size: 18px;
     line-height: 30px;
     margin: 0px 68px 45px 68px;
@@ -108,6 +111,9 @@
     font-size: 20px;
     line-height: 45px;
     text-align: center;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
