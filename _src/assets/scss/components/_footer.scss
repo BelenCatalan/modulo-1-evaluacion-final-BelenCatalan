@@ -1,1 +1,114 @@
-
+a {
+  text-decoration: none;
+}
+.footer {
+  &__container {
+    background-color: #304268;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media all and (min-width: 768px) {
+    }
+    @media all and (min-width: 1280px) {
+    }
+  }
+  &__arrow {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    position: relative;
+    top: -22px;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    @media all and (min-width: 1280px) {
+      margin: 0px 370px 0px 370px;
+    }
+  }
+  &__section :nth-child(1) {
+    order: 3;
+    @media all and (min-width: 768px) {
+      order: 1;
+    }
+  }
+  &__section :nth-child(2) {
+    order: 1;
+  }
+  &__section :nth-child(3) {
+    order: 1;
+  }
+  &__menu1 {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Roboto Regular", sans-serif;
+    // width: 73px;
+    // height: 150px;
+    margin: 15px 0px 30px 0px;
+    @media all and (min-width: 768px) {
+      width: 210px;
+      height: 150px;
+      text-align: left;
+      margin: 0px 0px 30px 0px;
+    }
+    @media all and (min-width: 1280px) {
+      width: 161px;
+    }
+  }
+  &__menu2 {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Roboto Regular", sans-serif;
+    // width: 73px;
+    // height: 150px;
+    margin: 0px 0px 30px 0px;
+    @media all and (min-width: 768px) {
+      width: 210px;
+      height: 150px;
+      text-align: left;
+    }
+    @media all and (min-width: 1280px) {
+      width: 159px;
+      height: 90px;
+    }
+  }
+  // // &__list {
+  // //   color: white;
+  // }
+  &__links {
+    text-decoration: none;
+    color: white;
+  }
+  &__small {
+    @media all and (min-width: 768px) {
+      width: 210px;
+      height: 30px;
+      text-align: left;
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  &__love {
+    display: block;
+    margin-bottom: 45px;
+    @media all and (min-width: 768px) {
+    }
+  }
+  &__heart {
+    color: red;
+  }
+}
