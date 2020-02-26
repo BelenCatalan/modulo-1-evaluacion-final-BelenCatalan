@@ -22,6 +22,9 @@ a {
     border-radius: 50%;
     position: relative;
     top: -22px;
+    @media all and (max-width: 768px) {
+      display: none;
+    }
     &:hover {
       animation-name: rotate-arrow;
       animation-duration: 3s;
@@ -100,6 +103,9 @@ a {
     color: white;
   }
   &__small {
+    display: flex;
+    flex-direction: column-reverse;
+
     @media all and (min-width: 768px) {
       width: 210px;
       height: 30px;
